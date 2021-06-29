@@ -1,0 +1,43 @@
+ <html>
+    <head>
+       <title>My Selfie App</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="style.css" rel="stylesheet">
+
+</head>
+ 
+<body>
+    <div class="container">
+    <center>
+        <a href="" id="link" download="Selfy.png"></a>
+        <h1 class="h">Voice Selfie App 
+<i class="glyphicon glyphicon-camera"></i>
+        </h1>
+        <hr>
+        <h4 style="color:red;">Please press allow as soon as popup comes. After you give a command to click selfie</h4>
+        
+        <div class="form-group">
+            <label style="color: mediumblue; font-family: 'Jomhuria', cursive; font-size: 20px;">Say Anything</label><br>
+            <label style="color: mediumblue; font-family: 'Jomhuria', cursive; ">Your Result</label>
+<textarea class="form-control" id="textbox" readonly="true"></textarea>
+        </div>
+
+        <label style="color: mediumblue; font-family: 'Jomhuria', cursive;">Press The Start Button To Start</label><br>
+<button class="btn btn-warning" onclick="start()">Start</button><br><br>
+        <label class="twp">Your Webcam Preview </label>
+<div id="webcam" class=""></div>
+        <br>
+
+        <label class="tr">Your Selfie </label>
+<div id="result" class=""></div>
+    </center>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
